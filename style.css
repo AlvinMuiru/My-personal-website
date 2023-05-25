@@ -1,11 +1,42 @@
-header {
-    background-color: aqua;
+
+html {
+    font-size: large;
 }
 
-li {
+header, footer {
+    background-color: aqua;
+
+    
+}
+
+ul li {
     list-style-type: none;
 }
 
-body{
-    background-color: brown;
+body {
+    background-color:white;
+}
+
+.block {
+    width:30vw;
+    height:20vw;
+    color: black;
+    background-color:white;
+    padding:1rem;
+}
+.right {
+    float: right;
+}
+.clear {
+    clear: both;
+}
+
+nav {
+    font-size:larger;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
 }
