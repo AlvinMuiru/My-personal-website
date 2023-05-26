@@ -1,29 +1,36 @@
 
 html {
     font-size: large;
+    scroll-behavior: smooth;
 }
 
 header, footer {
     background-color: aqua;
     position: sticky;
+    padding: 0;
    
 }
 
 head {
     top: 0;
 }
-
 header, nav, main  {
     display:grid;
     place-content:center;
 }
 ul li {
     list-style-type: none;
+}
+.header_ul {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap: 5rem;
 
 }
 
 body {
-    background-color:white;
+    background-color:wheat;
 }
 
 .block {
@@ -121,6 +128,35 @@ width: auto;
     body {
  font-size:large;
     }
+    
+}
+.hero {
+    font-size: 100px;
+    letter-spacing: 0.25rem;
+    position:absolute;
+    top: -600px;
+    left:40px;
+    background-color: blueviolet;
+    padding: 0.25em 0.5em;
+    animation:showwelcome 1.0s ease-in-out 1s forwards;
+}
+@keyframes showwelcome {
+    0% {
+        top:-500px;
+        transform: skew(0deg, -5deg)
+        scaleY(0);
+    }
+    80% { 
+        top: 200px;
+        transform: skew(10deg, -5deg)
+        scaleY(1.2);
+    }
+    100% {
+        top: 160px;
+        transform: skew(-10deg,-5deg)
+        scaleY(1);
+    }
+
     
 }
 
