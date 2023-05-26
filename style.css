@@ -131,12 +131,14 @@ width: auto;
     
 }
 .hero {
-    font-size: 100px;
+    z-index:-1;
+    font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 0.25rem;
     position:absolute;
     top: -600px;
     left:40px;
-    background-color: blueviolet;
+    background-color:cornflowerblue;
     padding: 0.25em 0.5em;
     animation:showwelcome 1.0s ease-in-out 1s forwards;
 }
@@ -156,7 +158,4 @@ width: auto;
         transform: skew(-10deg,-5deg)
         scaleY(1);
     }
-
-    
-}
 

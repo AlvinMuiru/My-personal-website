@@ -8,18 +8,37 @@
     <meta name="description" content="This page contains all the things I have learned so far">
     <title>My Personal website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="build/css/style.css">
     <link rel="icon" href="" type="image/x-icon">
+    <script src="build/js/main.js" defer></script>
 </head>
 
 <body>
     <header><h1>Hey there I am Alvin Muiru.</h1>
-        <nav>
+        <section>
+            <div  class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+                <div>
+        <button id="hamburger-button" class="text-3xl self-end cursor-pointer">&#9776;   
+        </button>
+                </div>
+        <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
             <ul class="header_ul">
                 <li><a href="about.html">About me</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
-                
+                   
             </ul>
-        </nav>
+        </nav> 
+    </div>
+        </section>  
+    <section id="mobile-menu" class="absolute top-0 bg-red-700 w-full text-5xl  flex-col justify-content-center origin-top animate-open-menu hidden ">
+        <button class="text-8xl self-end px-8">&times;</button>
+
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+             <a href="#one" class="w-full text-center py-8 hover:opacity-90">Card project</a>
+             <a href="#two" class="w-full text-center py-8 hover:opacity-90">Tailwind project</a>
+        </nav> 
+     
+    </section>
 
     </header>
 
@@ -29,7 +48,7 @@
         <figure>
             <img src="img/IMG_20230402_145000_092.jpg" alt="A picture of me" title="" width="500" height="650" loading="eager">
             
-            <figcaption>An image of myself</figcaption>
+            <figcaption>An image of myself</figcapti mdon>
                 
         </figure>
 
@@ -40,10 +59,12 @@
             <h2>I am a scholar at DirectED bootcamp 2023</h2>
             <p>Over the course of the past two weeks i have designed various projects.</p>
             <p>Examples of these projects are:</p>
+
+            <br><br>
             <h3> 1. A HTML website for the little Taco shop.</h3>
             <div class="block right"><img src="img/tacos_and_drink_400x267 - Copy.png" alt="image of the website"></div>
             <p>I created a website for the Little Taco Shop with the following pages:</p>
-           
+            
             <ol>
                 <li>Menu page</li>
                 <li>Hours page</li>
@@ -51,7 +72,9 @@
             </ol>
             <p>The project was heavily based on HTML and required very little CSS.</p>
             <p>The project used Tables,contact forms,images,links and various lists.</p>
+            <a href="https://github.com/AlvinMuiru/HTML-assignment.git">Link to github repository</a>
             <div class="clear"></div>
+            <br><br><br>
         </section>
         <section>
             <h3>2. A menu page</h3>
@@ -66,8 +89,9 @@
             </ol>
             <div class="clear"></div>
 
+            <br><br><br>
         </section>
-        <section>
+        <section id="one">
             <h3>3. A card project</h3>
             <p>With knowledge from media queries I developed a website for a company that showed their staff.</p>
             <div class="block right"><img src="img/card project.PNG" alt="image of the website width="400" height="267"></div>
@@ -78,6 +102,7 @@
                 <li>Pseudo classes</li>
             </ol>
             <div class="clear"></div>
+            <br><br><br>
 
         </section>
         <section>
@@ -96,10 +121,12 @@
                     <dd>CSS Variables</dd>
                 </dt>
             </dl>
+            <a href="https://github.com/AlvinMuiru/Final-CSS-assignment.git">Link to github repository</a>
 
              <div class="clear"></div>
+             <br><br><br>
         </section>
-        <section>
+        <section id="two">
             <h3>5. Tailwind project</h3>
             <div class="block right"><img src="img/Capture.PNG" alt="image of the website" width="400" height="267"></div>
             <p>This project involved creating and styling an Acme rockets website using Tailwind an Custom CSS.</p>
@@ -110,6 +137,7 @@
                 <li>Use of icons</li>
                 <li>Media queries</li>
             </ol>
+            <a href="https://github.com/AlvinMuiru/Tailwind-assignment.git">Link to github repository</a>
             <div class="clear"></div>
         </section>
 
