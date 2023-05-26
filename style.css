@@ -1,5 +1,5 @@
 
-html {
+html  {
     font-size: large;
     scroll-behavior: smooth;
 }
@@ -11,21 +11,33 @@ header, footer {
    
 }
 
+.header_a {
+background-image: url(./img/19-Best-About-Me-Page-Examples-and-How-to-Write-a-Killer-About-Me-Page-1-1-1.png);
+}
+
 head {
     top: 0;
 }
+
 header, nav, main  {
     display:grid;
     place-content:center;
 }
+
 ul li {
     list-style-type: none;
 }
+
 .header_ul {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     gap: 5rem;
+
+}
+.h_1 {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -40,9 +52,11 @@ body {
     background-color:white;
     padding:1rem;
 }
+
 .right {
     float: right;
 }
+
 .clear {
     clear: both;
 }
@@ -57,11 +71,13 @@ nav {
     flex-direction: column;
     gap:3rem;
 }
+
  img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
  figcaption{
     display: flex;
     justify-content: center;
@@ -73,6 +89,7 @@ nav {
     grid-template-rows: 250px 250px;
     gap:1rem;
  }
+
  .box {
     background-color: coral;
  }
@@ -97,6 +114,7 @@ nav {
  a {
     font-size: larger;
  }
+ 
  a:hover,a:active {
     color: orangered;
  }
